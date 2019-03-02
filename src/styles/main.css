@@ -1,21 +1,66 @@
 @import "./variables.css";
 
-
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.background-image {
+header {
+    position: relative;
+}
+
+.navbar {
+    background-color: var(--navbar-color);
+    
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    margin: 10px;
+    font-family: "Raleway", sans-serif;
+    color: var(--navbar-font-color);
+}
+
+#top-bar {
     position: absolute;
     top: 0;
+    left: 0;
     right: 0;
+    z-index: -1;
+    min-height: 500px;
+    overflow: hidden;
+}
+
+#top-bar-left {
+    position: absolute;
+    width: 100%;
+    top: -80px;
     bottom: 0;
     left: 0;
     background-image: url("../assets/laptop.jpg");
     background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
-    opacity: 0.8;
+    background-position: cover;
+    opacity: .5;
 }
+
+#top-bar-right {
+    position: absolute;
+    width: 35%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: var(--top-bar-right-color);
+    opacity: .93;
+}
+
+.background-image {
+    position: absolute;
+    height: 30%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: .5;
+}
+
