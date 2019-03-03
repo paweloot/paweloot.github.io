@@ -99,6 +99,23 @@ img {
     border-radius: 50%;
 }
 
+/* ABOUT ME */
+#about h2 {
+    font-size: 30px;
+}
+
+#about h4 {
+    margin: 0;
+    margin-bottom: 12px;
+}
+
+#about .about-content {
+    width: 100%;
+    padding: 20px 40px;
+    margin: 0;
+    box-shadow: 5px 5px 50px var(--shadow-color);
+}
+
 /* PORTFOLIO */
 #portfolio h2 {
     font-size: 30px;
@@ -194,23 +211,6 @@ img {
 #portfolio-item-6 {
     background: url("../assets/portfolio-item.jpg") no-repeat;
 }
-
-/* #features h2 {
-    font-size: 35px;
-    margin: 0;
-    padding-top: 10px;
-}
-
-#features p {
-    color: #888;
-    margin: 0;
-    margin-bottom: 40px;
-}
-
-#features .fa-adobe {
-    font-size: 50px;
-    color: var(--primary-color);
-} */
 
 /* INFO */
 #info {
