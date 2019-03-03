@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Geneva, sans-serif; 
+    font-family: 'Nunito Sans', sans-serif; 
     font-size: 16px;
     line-height: 1.5em;
 }
@@ -57,30 +57,49 @@ img {
     background: url(../assets/laptop.jpg) no-repeat center center;
     border-bottom: 1px solid var(--primary-color);
     margin-bottom: 30px;
+    background-size: cover;
 }
 
 #showcase .row {
-    height: 600px;
+    height: 700px;
 }
 
 #showcase h1 {
     font-size: 50px;
     margin: 0;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
+}
+
+#showcase h3 {
+    font-size: 28px;
+    margin: 0;
+    padding-bottom: 5px;
 }
 
 #showcase p {
-    color: #eee;
+    color: #fff;
     margin: 0;
 }
 
 #showcase .showcase-content {
-    background: #333;
+    background: #222;
     color: #fff;
-    border-radius: 30px;
+    text-align: left;
+    border-radius: 40px;
     padding: 40px;
     opacity: .8;
 }
+
+#showcase #showcase-photo {
+    width: 45%;
+    border-radius: 50%;
+}
+
+/* #showcase .showcase-overlay {
+    background: var(--primary-color);
+    height: 100%;
+    opacity: .8;
+} */
 
 /* FEATURES */
 #features h2 {
@@ -159,14 +178,22 @@ img {
 }
 
 /* MEDIA QUERIES */
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     #showcase h1 {
         font-size: 30px;
     }
+
+    #showcase h3 {
+        font-size: 20px;
+    }
+
+    /* #showcase #showcase-photo {
+        width: 45%;
+    } */
 }
 
-@media (max-width: 500px) {
+@media (max-width: 767px) {
     #showcase .showcase-content {
-        padding: 30px 10px;
+        text-align: center;
     }
 }
