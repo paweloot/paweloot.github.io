@@ -4,4 +4,169 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Geneva, sans-serif; 
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+.container {
+    margin: auto;
+}
+
+img {
+    width: 100%;
+}
+
+.primary-text {
+    color: var(--primary-color);
+}
+
+.primary-background {
+    color: var(--primary-color);
+}
+
+/* HEADER */
+#main-header {
+    border-bottom: 1px solid var(--primary-color);
+}
+
+/* NAVBAR */
+#navbar {
+    text-transform: uppercase;
+}
+
+#navbar li {
+    display: inline;
+    padding-right: 20px;
+    list-style: none;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #333;
+}
+
+#navbar a:hover {
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 3px;
+}
+
+/* SHOWCASE */
+#showcase {
+    background: url(../assets/laptop.jpg) no-repeat center center;
+    border-bottom: 1px solid var(--primary-color);
+    margin-bottom: 30px;
+}
+
+#showcase .row {
+    height: 600px;
+}
+
+#showcase h1 {
+    font-size: 50px;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+#showcase p {
+    color: #eee;
+    margin: 0;
+}
+
+#showcase .showcase-content {
+    background: #333;
+    color: #fff;
+    border-radius: 30px;
+    padding: 40px;
+    opacity: .8;
+}
+
+/* FEATURES */
+#features h2 {
+    font-size: 35px;
+    margin: 0;
+    padding-top: 10px;
+}
+
+#features p {
+    color: #888;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+#features .fa-adobe {
+    font-size: 50px;
+    color: var(--primary-color);
+}
+
+/* INFO */
+#info {
+    background: url(../assets/laptop.jpg) no-repeat;
+    color: white;
+}
+
+#info h2 {
+    font-size: 35px;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#info ul {
+    list-style: none;
+    padding: 0;
+}
+
+#info li {
+    line-height: 2em;
+    font-size: 20px;
+}
+
+/* COMPANY */
+#company {
+    background: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+#company h4 {
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+#company ul {
+    padding: 0;
+    list-style: none;
+    line-height: 2em;
+
+}
+
+#company input[type="text"] {
+    padding: 8px;
+}
+
+#company button {
+    background: #888;
+    color: #fff;
+    padding: 10px;
+    border: 0;
+}
+
+/* FOOTER */
+#main-footer {
+    background: var(--primary-color);
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 800px) {
+    #showcase h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    #showcase .showcase-content {
+        padding: 30px 10px;
+    }
 }
