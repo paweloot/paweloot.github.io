@@ -104,6 +104,10 @@ img {
     font-size: 30px;
 }
 
+.test {
+    border: 2px solid red;   
+}
+
 #about h4 {
     margin: 0;
     margin-bottom: 12px;
@@ -113,6 +117,35 @@ img {
     width: 100%;
     padding: 20px 40px;
     margin: 0;
+    box-shadow: 5px 5px 50px var(--shadow-color);
+}
+
+/* SKILLS */
+#skills h2 {
+    font-size: 30px;
+}
+
+#skills h3 {
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 12px;
+}
+
+#skills .skills-content {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#skills .skills-content-left {
+    padding: 20px 40px;
+    height: 300px;
+    box-shadow: 5px 5px 50px var(--shadow-color);
+}
+
+#skills .skills-content-right {
+    padding: 20px 40px;
+    height: 300px;
     box-shadow: 5px 5px 50px var(--shadow-color);
 }
 
@@ -289,5 +322,9 @@ img {
     #showcase .showcase-content {
         text-align: center;
         margin-bottom: 100px;
+    }
+
+    #skills .skills-content > div {
+        margin: 10px auto;
     }
 }
