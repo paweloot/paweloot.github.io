@@ -118,6 +118,7 @@ img {
     padding: 20px 40px;
     margin: 0;
     box-shadow: 5px 5px 50px var(--shadow-color);
+    text-align: left;
 }
 
 /* SKILLS */
@@ -245,7 +246,7 @@ img {
     background: url("../assets/portfolio-item.jpg") no-repeat;
 }
 
-/* INFO */
+/* INFO
 #info {
     background: url(../assets/laptop.jpg) no-repeat;
     color: white;
@@ -266,6 +267,62 @@ img {
 #info li {
     line-height: 2em;
     font-size: 20px;
+} */
+
+/* CONTACT */
+#contact h2 {
+    font-size: 30px;
+}
+
+#contact h3 {
+    font-size: 26px;
+    padding-bottom: 50px;
+    margin: 0;
+}
+
+#contact .contact-content {
+    margin: 0;
+    margin-bottom: 24px;
+    box-shadow: 5px 5px 50px var(--shadow-color);
+}
+
+#contact .contact-content-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    background-color: var(--primary-color);
+    padding: 40px 30px;
+    color: #fff;
+}
+
+#contact ul {
+    list-style: none;
+    margin-top: 100px;
+    padding-left: 0;
+}
+
+#contact .contact-content-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 40px 30px;
+}
+
+#contact .contact-content-right input[type="text"] {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+#contact .contact-content-right input[type="text"]:last-child {
+    margin-top: 50px;
+}
+
+#contact input[type="text"] {
+    border: 0;
+    border-bottom: 1px solid var(--primary-color);
 }
 
 /* COMPANY */
@@ -281,10 +338,18 @@ img {
 }
 
 #company ul {
+    border: 2px solid red;
     padding: 0;
     list-style: none;
     line-height: 2em;
+    display: flex;
+    justify-content: space-between;
+}
 
+#company i {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
 }
 
 #company input[type="text"] {
@@ -322,6 +387,14 @@ img {
     #showcase .showcase-content {
         text-align: center;
         margin-bottom: 100px;
+    }
+
+    #about .about-content {
+        padding: 20px 0px;
+    }
+
+    #about .about-content > div {
+        padding: 0;   
     }
 
     #skills .skills-content > div {
