@@ -371,10 +371,6 @@ img {
     #showcase h3 {
         font-size: 20px;
     }
-
-    /* #showcase #showcase-photo {
-        width: 45%;
-    } */
 }
 
 @media (max-width: 767px) {
@@ -393,5 +389,9 @@ img {
 
     #skills .skills-content > div {
         margin: 10px auto;
+    }
+
+    #company .social-icons {
+        max-width: 50%;
     }
 }
