@@ -2,4 +2,16 @@
     /* --primary-color: #56a79a; */
     --primary-color: #00a38c;
     --shadow-color: #aaa;
+    --button-hover-color: #b21221;
+    --bar-color: #ddd;
+    --bar-fill-color: #00a38c;
+
+    /* SKILLS */
+    --skill-html: 70%;
+    --skill-css: 70%;
+    --skill-js: 50%;
+
+    --skill-punctuality: 90%;
+    --skill-patience: 20%;
+    --skill-teamwork: 75%;
 }
