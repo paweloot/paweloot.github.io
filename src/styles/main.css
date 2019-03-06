@@ -1,6 +1,6 @@
 @import "./variables.css";
 
-* {
+*, ::after, ::before {
     box-sizing: border-box;
 }
 
@@ -17,21 +17,18 @@ body {
     margin: auto;
 }
 
-img {
-    width: 100%;
-}
-
 .primary-text {
-    color: var(--primary-color);
-}
-
-.primary-background {
     color: var(--primary-color);
 }
 
 /* HEADER */
 #main-header {
     border-bottom: 1px solid var(--primary-color);
+}
+
+#main-header a {
+    text-decoration: none;
+    color: inherit;
 }
 
 /* NAVBAR */
@@ -47,29 +44,39 @@ img {
 
 #navbar a {
     text-decoration: none;
-    color: #333;
+    color: var(--grey-text-color);
 }
 
 #navbar a:hover {
     color: var(--primary-color);
-    border-bottom: 3px solid var(--primary-color);
-    padding-bottom: 3px;
+    border-bottom: 2px solid var(--primary-color);
 }
 
 /* SHOWCASE */
 #showcase {
-    background: url(../assets/laptop.jpg) no-repeat center center;
+    position: relative;
+}
+
+#showcase::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     border-bottom: 1px solid var(--primary-color);
     margin-bottom: 30px;
+    background: url(../assets/laptop.jpg) no-repeat center center;
     background-size: cover;
+    opacity: .8;
 }
 
 #showcase .row {
-    padding: 250px 0;
+    padding: 220px 0;
 }
 
 #showcase h1 {
-    font-size: 50px;
+    font-size: 2.5em;
     margin: 0;
     padding-bottom: 50px;
 }
@@ -87,6 +94,8 @@ img {
 
 #showcase .showcase-content {
     background: #222;
+    position: relative;
+    z-index: 1;
     color: #fff;
     text-align: left;
     border-radius: 40px;
@@ -95,6 +104,8 @@ img {
 }
 
 #showcase #showcase-photo {
+    position: relative;
+    z-index: 1;
     width: 45%;
     border-radius: 50%;
 }
@@ -471,11 +482,11 @@ img {
 /* MEDIA QUERIES */
 @media (max-width: 1000px) {
     #showcase h1 {
-        font-size: 30px;
+        font-size: 2em;
     }
 
     #showcase h3 {
-        font-size: 20px;
+        font-size: 1.4em;
     }
 }
 
@@ -483,6 +494,10 @@ img {
     #showcase .showcase-content {
         text-align: center;
         margin-bottom: 100px;
+    }
+
+    #showcase .row {
+        padding: 100px 0;
     }
 
     #about .about-content {
