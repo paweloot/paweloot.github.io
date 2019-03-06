@@ -21,14 +21,14 @@ body {
     color: var(--primary-color);
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 /* HEADER */
 #main-header {
     border-bottom: 1px solid var(--primary-color);
-}
-
-#main-header a {
-    text-decoration: none;
-    color: inherit;
 }
 
 /* NAVBAR */
@@ -43,13 +43,24 @@ body {
 }
 
 #navbar a {
-    text-decoration: none;
+    position: relative;
     color: var(--grey-text-color);
 }
 
-#navbar a:hover {
-    color: var(--primary-color);
-    border-bottom: 2px solid var(--primary-color);
+#navbar a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: var(--primary-color);
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+#navbar a:hover::before {
+    transform: scaleX(1);
 }
 
 /* SHOWCASE */
@@ -122,9 +133,8 @@ body {
 }
 
 #contact-cv .button {
-    max-width: 180px;
-    margin-right: 10px;
-    margin-left: 10px;
+    min-width: 180px;
+    margin: 10px;
 }
 
 #contact-cv .button-contact {
@@ -300,7 +310,6 @@ body {
 }
 
 #portfolio a {
-    text-decoration: none;
     color: #fff;
     font-size: 28px;
 }
@@ -470,7 +479,6 @@ body {
 }
 
 #company a {
-    text-decoration: none;
     color: #fff;
 }
 
