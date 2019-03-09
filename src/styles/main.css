@@ -372,29 +372,6 @@ a {
     background: url("../assets/portfolio-item.jpg") no-repeat;
 }
 
-/* INFO
-#info {
-    background: url(../assets/laptop.jpg) no-repeat;
-    color: white;
-}
-
-#info h2 {
-    font-size: 35px;
-    margin: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-#info ul {
-    list-style: none;
-    padding: 0;
-}
-
-#info li {
-    line-height: 2em;
-    font-size: 20px;
-} */
-
 /* CONTACT */
 #contact h2 {
     font-size: 30px;
@@ -447,8 +424,14 @@ a {
 }
 
 #contact input[type="text"] {
+    outline: none;
     border: 0;
     border-bottom: 1px solid var(--primary-color);
+    transition: border-color .3s ease-in-out;
+}
+
+#contact input[type="text"]:focus {
+    border-color: var(--secondary-color);
 }
 
 /* COMPANY */
